@@ -1,4 +1,43 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: inline;
+}
+
+#input-text {
+    height: 25vh;
+    width: 40vh;
+}
+
+.image {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-items: left;
+}
+
+.image img {
+    background-image: url("images/shakespeare.jpg");
+    background-size: cover;
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    margin-left: 950px;
+}
+
+.translator {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#output {
+    height: 25vh;
+    width: 40vh;
+    background-color: aqua;
 }
