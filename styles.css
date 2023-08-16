@@ -1,32 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Pacifico&display=swap');
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    overflow: hidden;
 }
 
-.header {
-    display: inline;
+body {
+    background: #2980B9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-#input-text {
-    height: 25vh;
-    width: 40vh;
+h1 {
+    font-family: 'Lilita One', cursive;
+    text-align: center;
+    padding: 1rem;
+}
+
+.container-header {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    margin: 1rem;
+}
+
+#quote pre {
+    padding: 1rem;
+    font-family: 'Pacifico', cursive;
+    color: red;
+    font-size: 32px;
+    margin: 1.5rem 10rem;
 }
 
 .image {
-    width: 100%;
-    height: 50vh;
     display: flex;
-    justify-items: left;
-}
-
-.image img {
+    padding: 1rem;
+    justify-content: right;
     background-image: url("images/shakespeare.jpg");
     background-size: cover;
-    height: 280px;
-    width: 280px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
-    margin-left: 950px;
+    border: 5px solid black;
 }
 
 .translator {
@@ -36,8 +54,38 @@
     justify-content: space-evenly;
 }
 
+#input-text {
+    height: 40vh;
+    width: 55vh;
+    padding: 1rem;
+    margin: 1.5rem 1rem;
+    border: 1.5px solid black;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: large;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+#btn-translate {
+    height: 5rem;
+    width: 7rem;
+    border-radius: 12%;
+    font-weight: bolder;
+    background-color: #DFFFFD;
+    color: black;
+}
+
 #output {
-    height: 25vh;
-    width: 40vh;
-    background-color: aqua;
+    height: 38vh;
+    width: 55vh;
+    background-color: #DFFFFD;
+    padding: 1rem;
+    margin: 1.5rem 1rem;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    border: 1.5px solid black;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
 }
